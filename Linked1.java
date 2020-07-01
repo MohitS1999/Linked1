@@ -73,6 +73,9 @@ class LinkedList{
 		else{
 			for(int i=0;i<index-1;i++){
 				n=n.next;
+				//if index value is greater than size of linked list
+				if (n==null)
+					return;
 			}
 			node.next=n.next;
 			n.next=node;
